@@ -1,13 +1,13 @@
 package main
 
 import (
+	"altria"
 	"fmt"
-	"github.com/JiahaoHong1997/altria-web"
 	"net/http"
 )
 
 func main() {
-	r := altria_web.Saber()
+	r := altria.Saber()
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
 	})

@@ -1,4 +1,4 @@
-package Altria_web
+package altria
 
 import (
 	"fmt"

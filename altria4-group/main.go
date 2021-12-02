@@ -33,7 +33,6 @@ func main() {
 				"password": c.PostForm("password"),
 			})
 		})
-
 	}
 
 	r.Run(":9999")

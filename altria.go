@@ -72,8 +72,8 @@ func (group *RouterGroup) GET(pattern string, handler HandlerFunc) {
 	group.addRoute("GET", pattern, handler)
 }
 
-func (group *RouterGroup) POST(pattern string, hangdler HandlerFunc) {
-	group.addRoute("POST", pattern, hangdler)
+func (group *RouterGroup) POST(pattern string, handler HandlerFunc) {
+	group.addRoute("POST", pattern, handler)
 }
 
 // Run defines the method to start a http server

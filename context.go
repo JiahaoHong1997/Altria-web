@@ -100,3 +100,7 @@ func (c *Context) HTML(code int, name string, data interface{}) {
 		c.Fail(500, err.Error())
 	}
 }
+
+func (c *Context) Redirect(code int, url string) { // 跳转
+	http.Redirect(c.Writer, c.Req, url, code)
+}
